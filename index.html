@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit & Vegetable eCommerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carousel-inner img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+        }
+        .carousel {
+            width: 900px;
+        }
+        .carousel-item p {
+            font-size: 1.25rem;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            border-radius: 5px;
+        }
+        .card-img-top { width: 100%; height: 300px;object-fit: cover; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fruit & Vegetable Market</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="jumbotron text-center" style="background-image: url('https://t3.ftcdn.net/jpg/02/17/21/68/360_F_217216886_zmsKmNGEcGGs5cKgmL6vM6aCUfzY9OQy.jpg'); background-size: cover; background-position: center;">
+        <h1 class="display-4">Welcome to Fruit & Vegetable Market</h1>
+        <p class="lead">Discover the freshest produce and unbeatable deals</p>
+        <a href="#" class="btn btn-primary btn-lg">Shop Now and Save!</a>
+    </section>
+    <div class="container text-center my-4">
+        <p>Experience the best in fresh produce, exclusive deals, and top-notch customer service. Shop now and enjoy fast shipping and unbeatable prices.</p>
+        <h1>We offer You</h1>
+    </div>
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>Fresh Fruits: Taste the Difference</p>
+                    <img src="https://www.shutterstock.com/image-photo/crate-full-freshly-picked-red-600nw-2128861607.jpg" class="d-block w-100" alt="Fresh Fruits">
+                </div>
+                <div class="carousel-item">
+                    <p>Healthy Vegetables: Handpicked Just for You</p>
+                    <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6" class="d-block w-100" alt="Healthy Vegetables">
+                </div>
+                <div class="carousel-item">
+                    <p>Exclusive Deals: Don’t Miss Out!</p>
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2175402847/display_1500/stock-photo-photo-of-ecstatic-lady-shout-loud-yeah-fist-up-raise-win-lottery-isolated-bright-shine-color-2175402847.jpg" class="d-block w-100" alt="Exclusive Offers">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <h5 class="text-center my-4">Our Suppliers</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/685040406/photo/batad-rice-terraces-northern-luzon-philippines.jpg?s=612x612&w=0&k=20&c=-3OV8UaafGyYRs_12mqZnDy5S5RTvc7I5LGpK8kTpqI=" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Benguet Fruits Supplier</h5>
+                        <p class="card-text">Delicious and fresh, just for you.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.itsmorefuninthephilippines.co.uk/wp-content/uploads/Bicol_CaloyLLamas-1-1.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicol Vegetable Marketing</h5>
+                        <p class="card-text">Healthy with reasonable price.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDTI7THZ3MmBJY3C1VQyUEu4yU_rGQU-3dw&s" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">A&J Fruits and Vegetables</h5>
+                        <p class="card-text">A treat for your taste buds.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            © 2023 Fruit & Vegetable Market
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
